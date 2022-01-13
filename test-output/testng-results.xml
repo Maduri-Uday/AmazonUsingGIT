@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="41143" started-at="2022-01-13T15:20:05 IST" finished-at="2022-01-13T15:20:46 IST">
+    <groups>
+    </groups>
+    <test name="ValidateTitleTest" duration-ms="13707" started-at="2022-01-13T15:20:05 IST" finished-at="2022-01-13T15:20:19 IST">
+      <class name="homePage.TitleValidation">
+        <test-method status="PASS" signature="open()[pri:0, instance:homePage.TitleValidation@795cd85e]" name="open" is-config="true" duration-ms="9014" started-at="2022-01-13T15:20:05 IST" finished-at="2022-01-13T15:20:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open -->
+        <test-method status="PASS" signature="validatingTitle()[pri:0, instance:homePage.TitleValidation@795cd85e]" name="validatingTitle" duration-ms="446" started-at="2022-01-13T15:20:14 IST" finished-at="2022-01-13T15:20:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatingTitle -->
+        <test-method status="PASS" signature="close()[pri:0, instance:homePage.TitleValidation@795cd85e]" name="close" is-config="true" duration-ms="4181" started-at="2022-01-13T15:20:15 IST" finished-at="2022-01-13T15:20:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- homePage.TitleValidation -->
+    </test> <!-- ValidateTitleTest -->
+    <test name="LoginTest" duration-ms="26799" started-at="2022-01-13T15:20:19 IST" finished-at="2022-01-13T15:20:46 IST">
+      <class name="loginPage.LoginTest">
+        <test-method status="PASS" signature="i()[pri:0, instance:loginPage.LoginTest@6b81ce95]" name="i" is-config="true" duration-ms="4198" started-at="2022-01-13T15:20:19 IST" finished-at="2022-01-13T15:20:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- i -->
+        <test-method status="PASS" signature="login()[pri:0, instance:loginPage.LoginTest@6b81ce95]" name="login" duration-ms="6187" started-at="2022-01-13T15:20:24 IST" finished-at="2022-01-13T15:20:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="FAIL" signature="buyingOneplus()[pri:0, instance:loginPage.LoginTest@6b81ce95]" name="buyingOneplus" duration-ms="14857" started-at="2022-01-13T15:20:30 IST" depends-on-methods="loginPage.LoginTest.login" finished-at="2022-01-13T15:20:45 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Hello, uday] but found [Amazon.in : OnePlus]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Hello, uday] but found [Amazon.in : OnePlus]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at loginPage.LoginTest.buyingOneplus(LoginTest.java:61)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buyingOneplus -->
+        <test-method status="PASS" signature="close()[pri:0, instance:loginPage.LoginTest@6b81ce95]" name="close" is-config="true" duration-ms="827" started-at="2022-01-13T15:20:45 IST" finished-at="2022-01-13T15:20:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- loginPage.LoginTest -->
+    </test> <!-- LoginTest -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,6 @@
+pageObjects\SigninPage.class
+utilities\Base.class
+utilities\ExtentReports.class
+utilities\Screenshot.class
+pageObjects\Homepage.class
+pageObjects\ProductPage.class

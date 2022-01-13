@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 64.081 s <<< FAILURE! - in TestSuite
+loginPage.LoginTest.buyingOneplus  Time elapsed: 14.1 s  <<< FAILURE!
+java.lang.AssertionError: expected [Hello, uday] but found [Amazon.in : OnePlus]
+	at loginPage.LoginTest.buyingOneplus(LoginTest.java:61)
+
